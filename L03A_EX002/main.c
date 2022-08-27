@@ -29,26 +29,22 @@ int main()
     fflush(stdin);
     scanf ("%f", &v1);
 
-    if (v1 > 0 ) //verificando valores
+    if (v1 <= 0 ) //verificando valores
+       printf("\n\n Estes valores não formam um retangulo");
+    else
     {
         printf ("\n\n Digite outro valor : ");
         fflush(stdin);
         scanf ("%f", &v2);
-        if (v2 >0)
+    }
+        if (v2 <= 0)
+            printf("\n\n Estes valores não formam um retangulo");
+        else
         {
             //calculo
             h = v1 * v2;
             printf ("\n\n A area desse retangulo é igual a %.1f ", h);
         }
-        else
-        {
-            printf("\n\n Estes valores não formam um retangulo");
-        }
-    }
-    else
-    {
-        printf("\n\n Estes valores não formam um retangulo");
-    }
 
 
     return 0;

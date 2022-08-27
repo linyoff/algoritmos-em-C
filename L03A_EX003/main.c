@@ -37,19 +37,13 @@ int main()
 
     //verificar
     if (n1 > n2)
-    {
         printf ("\n\n %d é maior que %d", n1, n2);
-    }
     else
     {
         if (n1 < n2)
-        {
             printf ("\n\n %d é menor que %d", n1, n2);
-        }
         else
-        {
             printf("\n\n os valores %d e %d são iguais", n1, n2);
-        }
     }
 
 
