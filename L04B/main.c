@@ -78,49 +78,49 @@ int main()
             else
             {
                 if (m == 1)
-                    printf ("\n\n O número escolhido representa o mês de JANEIRO");
+                    printf ("\n\n O número escolhido representa o mês de JANEIRO\n\n");
                 else
                 {
                     if (m == 2)
-                        printf ("\n\n O número escolhido representa o mês de FEVEREIRO");
+                        printf ("\n\n O número escolhido representa o mês de FEVEREIRO\n\n");
                     else
                     {
                         if (m == 3)
-                            printf ("\n\n O número escolhido representa o mês de MARÇO");
+                            printf ("\n\n O número escolhido representa o mês de MARÇO\n\n");
                         else
                         {
                             if (m == 4)
-                                printf ("\n\n O número escolhido representa o mês de ABRIL");
+                                printf ("\n\n O número escolhido representa o mês de ABRIL\n\n");
                             else
                             {
                                 if (m == 5)
-                                    printf ("\n\n O número escolhido representa o mês de MAIO");
+                                    printf ("\n\n O número escolhido representa o mês de MAIO\n\n");
                                 else
                                 {
                                     if (m == 6)
-                                        printf ("\n\n O número escolhido representa o mês de JUNHO");
+                                        printf ("\n\n O número escolhido representa o mês de JUNHO\n\n");
                                     else
                                     {
                                        if (m == 7)
-                                           printf ("\n\n O número escolhido representa o mês de JULHO");
+                                           printf ("\n\n O número escolhido representa o mês de JULHO\n\n");
                                        else
                                        {
                                            if (m == 8)
-                                               printf ("\n\n O número escolhido representa o mês de AGOSTO");
+                                               printf ("\n\n O número escolhido representa o mês de AGOSTO\n\n");
                                            else
                                            {
                                                if (m == 9)
-                                                   printf ("\n\n O número escolhido representa o mês de SETEMBRO");
+                                                   printf ("\n\n O número escolhido representa o mês de SETEMBRO\n\n");
                                                else
                                                {
                                                    if (m == 10)
-                                                       printf ("\n\n O número escolhido representa o mês de OUTUBRO");
+                                                       printf ("\n\n O número escolhido representa o mês de OUTUBRO\n\n");
                                                    else
                                                    {
                                                        if (m == 11)
-                                                           printf ("\n\n O número escolhido representa o mês de NOVEMBRO");
+                                                           printf ("\n\n O número escolhido representa o mês de NOVEMBRO\n\n");
                                                        else
-                                                           printf ("\n\n O número escolhido representa o mês de DEZEMBRO");
+                                                           printf ("\n\n O número escolhido representa o mês de DEZEMBRO\n\n");
                                                     }
                                                 }
                                             }
@@ -169,7 +169,7 @@ int main()
 
 
                  //finalizando
-                 printf ("\n\n Você nasceu no ano de %d \n\n", ano);
+                 printf ("\n\n Você nasceu no ano de %d \n\n", ano_nasc);
                  printf ("\n\n Sua idade em dias é %d \n\n", id_dias);
                  printf ("\n\n Sua idade em meses é %d \n\n", id_mes);
                  printf ("\n\n Sua idade em semanas é %d \n\n", id_smn);
