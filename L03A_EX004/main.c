@@ -53,47 +53,51 @@ int main()
                 if (nt4 >= 0 && nt4 <= 10) //verificando nt4
                 {
                     md = (nt1 + nt2 + nt3 + nt4) / 4;
+                    printf ("\n\n A nota media de %s e igual a %.1f", nm, md);
+
+                    if (md >= 6)
+                    {
+                        printf ("\n\n situacao: APROVADO");
+                    }
+                    else
+                    {
+                        if (md >=4 && md <6)
+                        {
+                            printf ("\n\n situacao: RECUPERACAO");
+                        }
+                        else
+                        {
+                             printf ("\n\n situacao: REPROVADO");
+                        }
+                    }
+
                 }
                 else
                 {
-                    printf ("\n\n Nota invalida: ");
+                    printf ("\n\nNota invalida");
+
                 }
             }
             else
             {
-                printf ("\n\n Nota invalida: ");
+                printf ("\n\nNota invalida");
             }
         }
         else
         {
-            printf ("\n\n Nota invalida: ");
+            printf ("\n\nNota invalida");
         }
     }
     else
     {
-        printf ("\n\n Nota invalida: ");
+        printf ("\n\nNota invalida");
     }
 
     //exibindo valor da media
-    printf ("\n\n A nota media de %s e igual a %.1f", nm, md);
 
     //verificando aprovacao
 
-    if (md >= 6)
-    {
-        printf ("\n\n situacao: APROVADO");
-    }
-    else
-    {
-        if (md >=4 && md <6)
-        {
-            printf ("\n\n situacao: RECUPERACAO");
-        }
-        else
-        {
-           printf ("\n\n situacao: REPROVADO");
-        }
-    }
+
 
     return 0;
 }

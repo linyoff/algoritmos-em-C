@@ -136,71 +136,51 @@ int main()
             }
         }
 
-
-
-
-
-
+    if (opc == 2)
+    {
+        printf ("\n\n OPÇÃO 2");
+        //recebendo idade
+        printf ("\n\n Digite sua idade: ");
+        fflush (stdin);
+        scanf ("%d", &id);
+        //verificando idade
+        if (id <= 0 || id > 120)
+            printf ("\n\n Idade inválida!");
         else
         {
-            if (opc == 2)
-            {
-                printf ("\n\n OPÇÃO 2");
-
-
-                 //recebendo idade
-                 printf ("\n\n Digite sua idade: ");
-                 fflush (stdin);
-                 scanf ("%d", &id);
-
-                 //verificando idade
-                 if (id <= 0 || id > 120)
-                     printf ("\n\n Idade inválida!");
-                 else
-                 {
-
-                 }
-
-                 //ano que a pessoas nasceu
-                 ano_nasc = 2022 - id;
-                 id_dias = id * 365;
-                 id_mes = id * 12;
-                 id_smn = id_dias / 7;
-
-
-                 //finalizando
-                 printf ("\n\n Você nasceu no ano de %d \n\n", ano_nasc);
-                 printf ("\n\n Sua idade em dias é %d \n\n", id_dias);
-                 printf ("\n\n Sua idade em meses é %d \n\n", id_mes);
-                 printf ("\n\n Sua idade em semanas é %d \n\n", id_smn);
-
-
-
-
-            }
-            else
-            {
-                printf ("\n\n OPÇÃO 3");
-
-                //recebendo ano
-                printf ("\n\n Digite um ano maior que 1900 e menor que 2099: ");
-                fflush (stdin);
-                scanf ("%d", &ano);
-
-                if (ano < 1900 || ano > 2099)
-                    printf ("\n\n Ano inválido!!\n\n");
-                else
-                {
-                    if (ano % 400 == 0 || ano % 4 == 0 && ano % 100 != 0)
-                    printf ("\n\n Esse ano é BISSEXTO! \n\n");
-                    else
-                    printf ("\n\n Esse ano não é bissexto \n\n");
-                }
-
-
-
-            }
+           //calculo ano de nascimento
+           ano_nasc = 2022 - id;
+           id_dias = id * 365;
+           id_mes = id * 12;
+           id_smn = id_dias / 7;
         }
+        //finalizando
+        printf ("\n\n Você nasceu no ano de %d \n\n", ano_nasc);
+        printf ("\n\n Sua idade em dias é %d \n\n", id_dias);
+        printf ("\n\n Sua idade em meses é %d \n\n", id_mes);
+        printf ("\n\n Sua idade em semanas é %d \n\n", id_smn);
+
+    }
+    else
+    {
+        printf ("\n\n OPÇÃO 3");
+        //recebendo ano
+        printf ("\n\n Digite um ano maior que 1900 e menor que 2099: ");
+        fflush (stdin);
+        scanf ("%d", &ano);
+        if (ano < 1900 || ano > 2099)
+            printf ("\n\n Ano inválido!!\n\n");
+        else
+        {
+            if (ano % 400 == 0 || ano % 4 == 0 && ano % 100 != 0)
+            printf ("\n\n Esse ano é BISSEXTO! \n\n");
+            else
+            printf ("\n\n Esse ano não é bissexto \n\n");
+        }
+
+
+
+    }
     }
 
 
