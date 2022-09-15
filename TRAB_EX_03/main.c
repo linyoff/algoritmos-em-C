@@ -2,7 +2,7 @@
 
 
 Nome: Aliny Alves Dutra
-Data: 15/09/2022
+Data: 12/09/2022
 Curso: 1º período de Análise e Desenvolvimento de Sistemas
 Email: aliny1505dutra@gmail.com
 
@@ -46,12 +46,10 @@ int main()
 
     //CRIANDO VARS
     int v, tot_v, cand1, cand2, cand3, cand4, tot_brnc, tot_nulo, percent;
-    char venc[50];
 
     //INICIALIZANDO VARS
     v=1;
     cand1=cand2=cand3=cand4=tot_brnc=tot_nulo=percent=tot_v=0;
-    strcpy(venc, "");
 
 
     //MENU DE CANDIDATOS
@@ -79,27 +77,31 @@ int main()
             fflush(stdin);
             scanf("%d", &v);
         }
-            if (v == 1)
-                cand1++;
+        //VERIFICANDO RESULTADOS
+        if (v == 1)
+            cand1++;
+        else
+            if (v == 2)
+                cand2++;
             else
-                if (v == 2)
-                    cand2++;
+                if (v == 3)
+                    cand3++;
                 else
-                    if (v == 3)
-                        cand3++;
+                    if (v == 4)
+                        Cand4++;
                     else
-                        if (v == 4)
-                            cand4++;
+                        if (v == 5)
+                            tot_nulo++;
                         else
-                            if (v == 5)
-                                tot_nulo++;
-                            else
-                                if (v == 6)
-                                    tot_brnc++;
+                            if (v == 6)
+                                tot_brnc++;
 
+        //CALCULO TOTAL DE VOTOS
         tot_v = cand1 + cand2 + cand3 + cand4 + tot_nulo + tot_brnc;
+        //CALCULO PERCENTUAL DE VOTOS EM BRANCO E NULOS
         percent = ((tot_brnc+tot_nulo)*100)/tot_v;
 
+    //RESULTADO FINAL
     system("cls");
     printf("\n\n           RESULTADO FINAL");
     printf("\n\n=======================================\n\n");
@@ -111,6 +113,7 @@ int main()
     printf("VOTOS EM BRANCO: %d\n", tot_brnc);
     printf("PERCENTUAL DE VOTOS BRANCOS E NULOS: %.0d%%\n\n\n", percent);
 
+    //VERIFICANDO VENCEDOR
     if (cand1 == cand2 && cand1 == cand3 && cand1 == cand4)
         printf("HOUVE UM EMPATE\n\n\n");
             if (cand1 > cand2 && cand1 > cand3 && cand1 > cand4)
