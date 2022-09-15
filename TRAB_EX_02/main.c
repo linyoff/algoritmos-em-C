@@ -2,10 +2,10 @@
 
 
 Nome: Aliny Alves Dutra
+CPF: 021.362.656-01
 Data: 10/09/2022
 Curso: 1º período de Análise e Desenvolvimento de Sistemas
 Email: aliny1505dutra@gmail.com || aliny.dutra@estudante.iftm.edu.br
-
 
 Criar um menu mostrando as opções que o usuário deseja executar
 1 – Calculo do valor do juros
@@ -68,7 +68,7 @@ int main()
     scanf ("%d", &opc);
     system ("cls");
 
-
+    //VERIFICANDO ESCOLHA
     if (opc < 1 || opc > 4)
         printf ("\n\nOPÇÃO INVÁLIDA");
     else
@@ -99,6 +99,7 @@ int main()
                         printf ("VALOR INVÁLIDO!");
                     else
                     {
+                        //CALCULO JUROS SIMPLES
                         juro_simpl = vl_cap * (tx_juro/100) * temp_apl;
                         system("cls");
                         printf ("    TAXA DE JUROS SIMPLES\n\n");
@@ -138,6 +139,7 @@ int main()
                         printf ("VALOR INVÁLIDO!");
                     else
                     {
+                        //CALCULO VALOR DO CAPITAL APLICADO
                         vl_cap = vl_juro/(temp_apl * (tx_juro/100));
                         system("cls");
                         printf("            VALOR DO CAPITAL APLICADO\n\n");
@@ -179,6 +181,7 @@ int main()
                             printf ("VALOR INVÁLIDO!");
                         else
                         {
+                            //CALCULO TEMPO DE APLICAÇÃO
                             temp_apl = vl_juro/(vl_cap * (tx_juro/100));
                             system("cls");
                             printf("            TEMPO DE APLICAÇÃO\n\n");
@@ -218,6 +221,7 @@ int main()
                             printf ("VALOR INVÁLIDO!");
                         else
                         {
+                            //CALCULO TAXA DE JUROS APLICADA
                             tx_juro = (vl_juro/(vl_cap * temp_apl))*100;
                             system("cls");
                             printf("            TAXA DE JUROS APLICADA\n\n");
