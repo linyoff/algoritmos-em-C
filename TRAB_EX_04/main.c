@@ -2,10 +2,22 @@
 
 
 Nome: Aliny Alves Dutra
-Data:
-Curso: 1� per�odo de An�lise e Desenvolvimento de Sistemas
+Data: 18/09/2022
+Curso: 1º período de Análise e Desenvolvimento de Sistemas
 Email: aliny1505dutra@gmail.com || aliny.dutra@estudante.iftm.edu.br
 
+Uma agência de publicidade quer prestar seus serviços somente para as maiores companhias, em
+número de funcionários. As empresas são classificadas por porte: G - grande, M - média, P - pequena
+e R - microempresa. Elabore um algoritmo que solicite ao operador o código da empresa, o porte e a
+quantidade de funcionários, processe e apresente no final os seguintes dados:
+a) qual o código da maior empresa em cada classificação;
+b) a quantidade de empresas pesquisadas em cada porte;
+c) a média de funcionários por empresa em cada porte;
+d) o percentual de empresas por porte em relação ao total geral de empresas pesquisadas.
+Observações:
+ validar corretivamente a classificação; considere a letra F como elemento finalizador da pesquisa;
+ o código da empresa deve estar entre 0001 e 9999;
+ a quantidade de funcionários não pode ser igual ou inferior a zero.
 
 */
 //==========================================================
@@ -23,7 +35,7 @@ Email: aliny1505dutra@gmail.com || aliny.dutra@estudante.iftm.edu.br
 
 int main()
 {
-    //CONFIGURAR ACENTUA��O
+    //CONFIGURAR ACENTUAÇÃO
     setlocale(LC_ALL,"Portuguese");
 
 	//CRIANDO VARS
@@ -43,7 +55,7 @@ int main()
     //RECEBENDO VALORES
     printf("\n\n                    PESQUISA\n");
     printf("\================================================\n");
-    while(porte != 'f' && porte != 'F')//LA�O COM FLAG F
+    while(porte != 'f' && porte != 'F')//LAÇO COM FLAG F
     {
         printf("\nDIGITE O PORTE DA EMPRESA OU F PARA ENCERRAR\n");
         printf("G-grande, M-media, P-pequena e R-microempresa: ");
@@ -52,13 +64,13 @@ int main()
         //VALIDANDO
         while(porte != 'G' && porte != 'g' && porte != 'M' && porte != 'm' && porte!= 'P' && porte != 'p' && porte != 'R' && porte != 'r' && porte != 'F' && porte != 'f')
         {
-            printf("\nINV�LIDO\n\n");
+            printf("\nINVÁLIDO\n\n");
             printf("\nDIGITE O PORTE DA EMPRESA OU F PARA ENCERRAR\n");
             printf("G-grande, M-media, P-pequena e R-microempresa: ");
             fflush(stdin);
             scanf("%c", &porte);
         }
-        if(porte != 'f' && porte != 'F')//VERIFICANDO SE IR� ENCERRAR
+        if(porte != 'f' && porte != 'F')//VERIFICANDO SE IRÁ ENCERRAR
         {
             printf("\nDIGITE O CODIGO DA EMPRESA: ");
             fflush(stdin);
@@ -70,7 +82,7 @@ int main()
                 fflush(stdin);
                 scanf("%d", &cod_empr);
             }
-            if(porte == 'G' || porte == 'g')//CONDI��O G
+            if(porte == 'G' || porte == 'g')//CONDIÇÃO G
             {
                 tot_empr++;//TOTAL EMPRESAS
                 qtd_G++;//TOTAL EMPRESAS G
