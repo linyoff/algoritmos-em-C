@@ -128,12 +128,25 @@ int calculo_resto (int a, int b)
 	return(calc);
 }
 
-int exponencial_nums (int a, int b)
+int exponencial(int a, int b)
 {
 	//vars
-	int calc=0;
+	int calc=1, cont=1;
 
-	calc =
+	if(a == 0)
+		calc = 0;
+	else
+		if(b > 0)
+		{
+			while(cont<=b)
+			{
+				calc = calc * a;
+				cont++;
+			}
+		}
+
+
+	return(calc);
 }
 
 //===================CODIGO PRINCIPAL=======================
@@ -144,7 +157,7 @@ int main()
     setlocale(LC_ALL,"Portuguese");
 
     //VARS
-    int opc = 0;
+    int opc = 0, num = 0, n1=0, n2=0, res=0, base=0, exp=0, calc_exp=0;
 
     //laco para exibir menu
     while (opc != 4)
@@ -157,9 +170,6 @@ int main()
 		{
 			system("cls");
 			printf("\nVOCE ESCOLHEU A OPCAO 1\n");
-
-			//VARS
-    		int num = 0;
 
     		//recebendo dados
 			num = receber_num(num);
@@ -179,8 +189,6 @@ int main()
 				system("cls");
 			    printf("\nVOCE ESCOLHEU A OPCAO 2\n");
 
-			    //VARS
-			    int n1=0, n2=0, res=0;
 			    //recebendo primeiro numero
 			    n1 = receber_num(n1);
 			    //validando
@@ -207,17 +215,14 @@ int main()
 					system("cls");
 			        printf("\nVOCE ESCOLHEU A OPCAO 3\n");
 
-					//VARS
-					int base=0, exp=0, calc_exp=0;
-
 					//recebendo primeiro numero
-			    	num1 = receber_num(num1);
+			    	base = receber_num(base);
 			    	//validando
-			    	validar_num(&num1);
+			    	validar_num(&base);
 			    	//recebendo segundo numero
-			    	num2 = receber_num(num2);
+			    	exp = receber_num(exp);
 			    	//validando
-			    	validar_num(&num2);
+			    	validar_num(&exp);
 			    	//calculo
 			    	calc_exp = exponencial(base, exp);
 			    	//final
