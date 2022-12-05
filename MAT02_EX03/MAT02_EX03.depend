@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1669750569 source:c:\users\aliny\documents\c\mat02_ex03\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	<math.h>
+	<time.h>
+	<locale.h>
+
